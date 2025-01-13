@@ -6,6 +6,7 @@ import Footer from './Footer'
 import { useEffect, useState } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
 import axios from 'axios'
+import toast, { Toaster } from 'react-hot-toast';
 
 function Dashboard() {
     const [response, setResponse] = useState(null); // Initialize with null
@@ -35,6 +36,7 @@ function Dashboard() {
         navigate('/'); // Redirect to login if not logged in
       } else {
         setResponse(JSON.parse(localResponse)); // Parse and set response
+
       }
     }, [navigate]); // Dependency includes `navigate`
   
@@ -42,13 +44,41 @@ function Dashboard() {
     useEffect(() => {
       if (response) {
         getStudentData();
+        toast.success("Login Successfull!!!");
+
       }
     }, [response]);
     
   return (
     <div>
+         <Toaster
+  position="top-right"
+  reverseOrder={true}
+  gutter={8}
+  containerClassName=""
+  containerStyle={{}}
+  toastOptions={{
+    // Define default options
+    className: '',
+    duration: 5000,
+    removeDelay: 1000,
+    style: {
+      background: '#ffff',
+      color: 'black',
+    },
+
+    // Default options for specific types
+    success: {
+      duration: 3000,
+      iconTheme: {
+        primary: 'green',
+        secondary: 'white',
+      },
+    },
+  }}
+/>
       <Header studentData={studentData}></Header>
-      <Profile_Card></Profile_Card>
+      <Profile_Card studentData={studentData}></Profile_Card>
       <Quick_followups></Quick_followups>
       <Edutech_Media></Edutech_Media>
       <Footer></Footer>

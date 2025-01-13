@@ -1,22 +1,16 @@
 
+import { useEffect, useState } from "react";
 import "../css/profilecard.css";
-function Profile_Card() {
-  const student = {
-    photo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeRXtuEuzoQ9f9gq5xZJAAzAXWtF-A86woCA&s", // Replace with the student's photo URL
-    name: "Boda Shanmukha Subramani",
-    rollnu:"19KH1A0512",
-    FatherName:"Kumara Swami",
-    MotherName:"Gayathri",
-    PhoneNumber:"7989705954",
-    email: "bssmani16@gmail.com",
-    father_phone: "9848105656",
-    course: "Computer Science and Engineering",
-    Branch_section:"CSE-A",
-    year: "1",
-    cgpa:'9.8',
-    semester:'2',
-    address: "123 College Street, City, Country",
-  };
+function Profile_Card({studentData}) {
+    const [student,setStudentData] = useState({})
+    console.log("kaka",student);
+    
+    useEffect(() => {
+        if (studentData) {
+          setStudentData(studentData[0]);
+        }
+      }, [studentData]); // Trigger useEffect when studentData changes
+    
   return (
     <div>
       {/* Dashboard Content */}

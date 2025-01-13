@@ -1,5 +1,6 @@
 // import React from 'react'
 import axios from 'axios';
+// useEffect
 import {
     MDBBtn,
     MDBContainer,
@@ -12,7 +13,7 @@ import {
   }
   
   from 'mdb-react-ui-kit';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import toast, { Toaster } from 'react-hot-toast';
 
 import { useNavigate } from 'react-router-dom';
@@ -20,6 +21,13 @@ import { useNavigate } from 'react-router-dom';
 function Login() {
   const [formData, setFormData] = useState({"username":"","password":""})
   const Navigate = useNavigate()
+
+ useEffect(() => {
+      const localResponse = localStorage.getItem('response');
+      if (localResponse) {
+        Navigate('/dashboard'); // Redirect to login if not logged in
+      } 
+    }, [Navigate]); 
 
   const formChange = (e)=>{
       setFormData({...formData,[e.target.name]:e.target.value})
