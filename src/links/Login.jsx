@@ -30,7 +30,7 @@ function Login() {
   const gotoLogin = async(e)=>{
     e.preventDefault()
     try {
-        const response = await axios.post("http://localhost:3000/login",formData)
+        const response = await axios.post("https://backend-project-1nk6.onrender.com/login",formData)
         console.log(response)
         localStorage.setItem('response',JSON.stringify({username:response.data.students.username,year:response.data.students.year}))
         Navigate('/dashboard',{state:{username:response.data.students.username,year:response.data.students.year}})
