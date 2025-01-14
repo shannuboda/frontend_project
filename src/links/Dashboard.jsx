@@ -4,7 +4,7 @@ import Quick_followups from './Quick_followups'
 import Edutech_Media from './Edutech_Media'
 import Footer from './Footer'
 import { useEffect, useState } from 'react'
-import { useLocation, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
 import toast, { Toaster } from 'react-hot-toast';
 
@@ -80,7 +80,7 @@ function Dashboard() {
       <Header studentData={studentData}></Header>
       <Profile_Card studentData={studentData}></Profile_Card>
       <Quick_followups></Quick_followups>
-      <Edutech_Media></Edutech_Media>
+      <Edutech_Media studentData={studentData}></Edutech_Media>
       <Footer></Footer>
     </div>
   )

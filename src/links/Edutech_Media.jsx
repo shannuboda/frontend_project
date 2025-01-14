@@ -1,5 +1,9 @@
+import { Navigate, useNavigate } from "react-router-dom";
 
-function Edutech_Media() {
+function Edutech_Media({studentData}) {
+    console.log("This is from edutech",studentData);
+    
+    const navigate = useNavigate()
   return (
     <div>
       <section id="advertisers" className="advertisers-service-sec pt-5 pb-5">
@@ -7,8 +11,8 @@ function Edutech_Media() {
           <div className="row">
             <div className="section-header text-center">
               <h2 className="fw-bold fs-1">
-                Our
-                <span className="b-class-secondary">Advertiser </span>Services
+                Your
+                <span className="b-class-secondary"> Academic </span>Followups
               </h2>
               <p className="sec-icon">
                 <i className="fa-solid fa-gear"></i>
@@ -25,7 +29,7 @@ function Edutech_Media() {
                 <p>Get the All Your Academic Score Cards of Your Semesters</p>
               </div>
             </div>
-            <div className="col">
+            <div className="col" onClick={()=>{navigate('/sem_data',{state:studentData})}}>
               <div className="service-card">
                 <div className="icon-wrapper">
                   <i className="fa-solid fa-arrows-down-to-people"></i>

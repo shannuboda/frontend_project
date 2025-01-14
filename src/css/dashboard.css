@@ -117,3 +117,136 @@
     }
   }
   
+
+  /* Sem Data page Design */
+
+ /* Overall Container */
+.marksheet-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+  padding: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+
+/* Welcome Section */
+.welcome-section {
+  text-align: center;
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  color: white;
+  padding: 30px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.welcome-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.welcome-section p {
+  font-size: 1.2rem;
+}
+
+/* Dropdown and Submit Section */
+.dropdown-container {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.subject-dropdown {
+  padding: 12px 15px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  margin-right: 10px;
+  background-color: #f0f0f0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.submit-button {
+  padding: 12px 25px;
+  font-size: 1rem;
+  color: white;
+  background-color: #6a11cb;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #2575fc;
+}
+
+/* Table Styling */
+.marksheet-table-container {
+  overflow-x: auto;
+}
+
+.marksheet-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.marksheet-table th,
+.marksheet-table td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+}
+
+.marksheet-table th {
+  background-color: #6a11cb;
+  color: white;
+  text-align: center;
+}
+
+.marksheet-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.marksheet-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.marksheet-table td {
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .welcome-section h1 {
+    font-size: 1.8rem;
+  }
+
+  .marksheet-table th, .marksheet-table td {
+    padding: 8px 10px;
+  }
+}
+/* Hide the header section while printing */
+@media print {
+  .welcome-section {
+    display: none;
+  }
+
+  .dropdown-container {
+    display: none;
+  }
+
+  .submit-button {
+    display: none;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+}
