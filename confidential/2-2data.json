@@ -1,0 +1,162 @@
+[
+    {
+      "username": "19KH1A0512",
+      "subjects": [
+        {
+          "name": "Number Theory and Applications",
+          "status": "P",
+          "credits": 3,
+          "grade": 9
+        },
+        {
+          "name": "Computer Organization",
+          "status": "P",
+          "credits": 3,
+          "grade": 8
+        },
+        {
+          "name": "Design and Analysis of Algorithms",
+          "status": "P",
+          "credits": 3,
+          "grade": 8
+        },
+        {
+          "name": "Entrepreneurship",
+          "status": "P",
+          "credits": 3,
+          "grade": 7
+        },
+        {
+          "name": "Operating Systems",
+          "status": "P",
+          "credits": 3,
+          "grade": 8
+        },
+        {
+          "name": "Software Engineering",
+          "status": "P",
+          "credits": 3,
+          "grade": 7
+        },
+        {
+          "name": "Operating Systems Lab",
+          "status": "P",
+          "credits": 1.5,
+          "grade": 10
+        },
+        {
+          "name": "Software Engineering Lab",
+          "status": "P",
+          "credits": 1.5,
+          "grade": 10
+        }
+      ]
+    },
+    {
+      "username": "19KH1A0516",
+      "subjects": [
+        {
+          "name": "Number Theory and Applications",
+          "status": "P",
+          "credits": 3,
+          "grade": 7
+        },
+        {
+          "name": "Computer Organization",
+          "status": "P",
+          "credits": 3,
+          "grade": 7
+        },
+        {
+          "name": "Design and Analysis of Algorithms",
+          "status": "P",
+          "credits": 3,
+          "grade": 8
+        },
+        {
+          "name": "Entrepreneurship",
+          "status": "P",
+          "credits": 3,
+          "grade": 7
+        },
+        {
+          "name": "Operating Systems",
+          "status": "P",
+          "credits": 3,
+          "grade": 7
+        },
+        {
+          "name": "Software Engineering",
+          "status": "P",
+          "credits": 3,
+          "grade": 6
+        },
+        {
+          "name": "Operating Systems Lab",
+          "status": "P",
+          "credits": 1.5,
+          "grade": 9
+        },
+        {
+          "name": "Software Engineering Lab",
+          "status": "P",
+          "credits": 1.5,
+          "grade": 9
+        }
+      ]
+    },
+    {
+      "username": "19KH1A0544",
+      "subjects": [
+        {
+          "name": "Number Theory and Applications",
+          "status": "P",
+          "credits": 3,
+          "grade": 8
+        },
+        {
+          "name": "Computer Organization",
+          "status": "P",
+          "credits": 3,
+          "grade": 8
+        },
+        {
+          "name": "Design and Analysis of Algorithms",
+          "status": "P",
+          "credits": 3,
+          "grade": 7
+        },
+        {
+          "name": "Entrepreneurship",
+          "status": "P",
+          "credits": 3,
+          "grade": 6
+        },
+        {
+          "name": "Operating Systems",
+          "status": "P",
+          "credits": 3,
+          "grade": 8
+        },
+        {
+          "name": "Software Engineering",
+          "status": "P",
+          "credits": 3,
+          "grade": 7
+        },
+        {
+          "name": "Operating Systems Lab",
+          "status": "P",
+          "credits": 1.5,
+          "grade": 10
+        },
+        {
+          "name": "Software Engineering Lab",
+          "status": "P",
+          "credits": 1.5,
+          "grade": 10
+        }
+      ]
+    }
+  ]
+  

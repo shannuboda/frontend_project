@@ -1,0 +1,162 @@
+[
+    {
+      "username": "19KH1A0512",
+      "subjects": [
+        {
+          "name": "Internet of Things",
+          "status": "P",
+          "credits": 3,
+          "grade": 7
+        },
+        {
+          "name": "Software Testing",
+          "status": "P",
+          "credits": 3,
+          "grade": 7
+        },
+        {
+          "name": "Cloud Computing",
+          "status": "P",
+          "credits": 3,
+          "grade": 7
+        },
+        {
+          "name": "Product Marketing",
+          "status": "P",
+          "credits": 3,
+          "grade": 7
+        },
+        {
+          "name": "Management Science",
+          "status": "P",
+          "credits": 3,
+          "grade": 8
+        },
+        {
+          "name": "Software Testing Lab",
+          "status": "P",
+          "credits": 1.5,
+          "grade": 10
+        },
+        {
+          "name": "Internet of Things Lab",
+          "status": "P",
+          "credits": 1.5,
+          "grade": 10
+        },
+        {
+          "name": "Industrial Training/Skill Development/Research Project",
+          "status": "P",
+          "credits": 2,
+          "grade": 10
+        }
+      ]
+    },
+    {
+      "username": "19KH1A0516",
+      "subjects": [
+        {
+          "name": "Internet of Things",
+          "status": "P",
+          "credits": 3,
+          "grade": 8
+        },
+        {
+          "name": "Software Testing",
+          "status": "P",
+          "credits": 3,
+          "grade": 7
+        },
+        {
+          "name": "Cloud Computing",
+          "status": "P",
+          "credits": 3,
+          "grade": 7
+        },
+        {
+          "name": "Product Marketing",
+          "status": "P",
+          "credits": 3,
+          "grade": 7
+        },
+        {
+          "name": "Management Science",
+          "status": "P",
+          "credits": 3,
+          "grade": 7
+        },
+        {
+          "name": "Software Testing Lab",
+          "status": "P",
+          "credits": 1.5,
+          "grade": 9
+        },
+        {
+          "name": "Internet of Things Lab",
+          "status": "P",
+          "credits": 1.5,
+          "grade": 9
+        },
+        {
+          "name": "Industrial Training/Skill Development/Research Project",
+          "status": "P",
+          "credits": 2,
+          "grade": 10
+        }
+      ]
+    },
+    {
+      "username": "19KH1A0544",
+      "subjects": [
+        {
+          "name": "Internet of Things",
+          "status": "P",
+          "credits": 3,
+          "grade": 7
+        },
+        {
+          "name": "Software Testing",
+          "status": "P",
+          "credits": 3,
+          "grade": 7
+        },
+        {
+          "name": "Cloud Computing",
+          "status": "P",
+          "credits": 3,
+          "grade": 7
+        },
+        {
+          "name": "Product Marketing",
+          "status": "P",
+          "credits": 3,
+          "grade": 7
+        },
+        {
+          "name": "Management Science",
+          "status": "P",
+          "credits": 3,
+          "grade": 7
+        },
+        {
+          "name": "Software Testing Lab",
+          "status": "P",
+          "credits": 1.5,
+          "grade": 9
+        },
+        {
+          "name": "Internet of Things Lab",
+          "status": "P",
+          "credits": 1.5,
+          "grade": 9
+        },
+        {
+          "name": "Industrial Training/Skill Development/Research Project",
+          "status": "P",
+          "credits": 2,
+          "grade": 10
+        }
+      ]
+    }
+  ]
+  

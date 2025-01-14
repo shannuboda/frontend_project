@@ -1,0 +1,48 @@
+[
+    {
+      "username": "19KH1A0512",
+      "subjects": [
+        {"name": "Formal Languages and Automata Theory", "status": "P", "credits": 3, "grade": 7},
+        {"name": "Artificial Intelligence", "status": "P", "credits": 3, "grade": 7},
+        {"name": "Object Oriented Analysis Design & Testing", "status": "P", "credits": 2, "grade": 6},
+        {"name": "Computer Networks", "status": "P", "credits": 3, "grade": 7},
+        {"name": "Web Technologies", "status": "P", "credits": 3, "grade": 6},
+        {"name": "Technical Communication and Presentation Skills", "status": "P", "credits": 3, "grade": 7},
+        {"name": "Artificial Intelligence Laboratory", "status": "P", "credits": 1.5, "grade": 10},
+        {"name": "Computer Networks Laboratory", "status": "P", "credits": 1.5, "grade": 10},
+        {"name": "Object Oriented Analysis Design & Testing Lab", "status": "P", "credits": 1, "grade": 10},
+        {"name": "Socially Relevant Project", "status": "P", "credits": 0.5, "grade": 10}
+      ]
+    },
+    {
+      "username": "19KH1A0516",
+      "subjects": [
+        {"name": "Formal Languages and Automata Theory", "status": "P", "credits": 3, "grade": 7},
+        {"name": "Artificial Intelligence", "status": "P", "credits": 3, "grade": 7},
+        {"name": "Object Oriented Analysis Design & Testing", "status": "P", "credits": 2, "grade": 6},
+        {"name": "Computer Networks", "status": "P", "credits": 3, "grade": 9},
+        {"name": "Web Technologies", "status": "P", "credits": 3, "grade": 9},
+        {"name": "Technical Communication and Presentation Skills", "status": "P", "credits": 3, "grade": 7},
+        {"name": "Artificial Intelligence Laboratory", "status": "P", "credits": 1.5, "grade": 10},
+        {"name": "Computer Networks Laboratory", "status": "P", "credits": 1.5, "grade": 10},
+        {"name": "Object Oriented Analysis Design & Testing Lab", "status": "P", "credits": 1, "grade": 10},
+        {"name": "Socially Relevant Project", "status": "P", "credits": 0.5, "grade": 10}
+      ]
+    },
+    {
+      "username": "19KH1A0544",
+      "subjects": [
+        {"name": "Formal Languages and Automata Theory", "status": "P", "credits": 3, "grade": 7},
+        {"name": "Artificial Intelligence", "status": "P", "credits": 3, "grade": 6},
+        {"name": "Object Oriented Analysis Design & Testing", "status": "P", "credits": 2, "grade": 8},
+        {"name": "Computer Networks", "status": "P", "credits": 3, "grade": 7},
+        {"name": "Web Technologies", "status": "P", "credits": 3, "grade": 7},
+        {"name": "Technical Communication and Presentation Skills", "status": "P", "credits": 3, "grade": 7},
+        {"name": "Artificial Intelligence Laboratory", "status": "P", "credits": 1.5, "grade": 10},
+        {"name": "Computer Networks Laboratory", "status": "P", "credits": 1.5, "grade": 10},
+        {"name": "Object Oriented Analysis Design & Testing Lab", "status": "P", "credits": 1, "grade": 10},
+        {"name": "Socially Relevant Project", "status": "P", "credits": 0.5, "grade": 10}
+      ]
+    }
+  ]
+  

@@ -37,11 +37,16 @@ function Login() {
 
   const gotoLogin = async(e)=>{
     e.preventDefault()
-    try {
-        const response = await axios.post("https://backend-project-1nk6.onrender.com/login",formData)
+    if(formData.username==="" || formData.password==="")
+    {
+      toast.error("Form Elements should not be blank");
+    }
+    else{
+      try {
+        const response = await axios.post("http://localhost:3000/login",formData)
         console.log(response)
-        localStorage.setItem('response',JSON.stringify({username:response.data.students.username,year:response.data.students.year,regulation:response.data.students.regulation}))
-        Navigate('/dashboard',{state:{username:response.data.students.username,year:response.data.students.year,regulation:response.data.students.regulation}})
+        localStorage.setItem('response',JSON.stringify({username:response.data.students.username,year:response.data.students.year,regulation:response.data.students.regulation,branch:response.data.students.branch}))
+        Navigate('/dashboard',{state:{username:response.data.students.username,year:response.data.students.year,regulation:response.data.students.regulation,branch:response.data.students.branch}})
     } catch (error) {
       if (error.response) {
         // Server responded with a status other than 200
@@ -55,8 +60,8 @@ function Login() {
       }
     }
     console.log(formData);
-    
-    
+    }
+   
     
   }
   return (

@@ -7,6 +7,7 @@ function Sem_Data() {
   const [selectedSemester, setselectedSemester] = useState("");
   const [marksheetData, setMarksheetData] = useState([]);
   const [response, setResponse] = useState(null); // Initialize with null
+  const [GPA, setGPA] = useState();
   // Login related code
   console.log(response);
 
@@ -22,7 +23,7 @@ function Sem_Data() {
 
   //   local storage related code
   const studentData = useLocation().state;
-  console.log(studentData);
+  // console.log(studentData);
 
   //   semesters data fetching api
   const handleSemesterChange = (event) => {
@@ -32,12 +33,13 @@ function Sem_Data() {
 
   const handleSubmit = async () => {
     const semData = await axios.get(
-      `http://localhost:3000/getsem1/${response.username}/${response.year}/${selectedSemester}`
+      `http://localhost:3000/getsem1/${response.username}/${response.year}/${selectedSemester}/${response.branch}/${response.regulation}`
     );
-    setMarksheetData(semData.data[0].subjects);
-    console.log("ssdd", marksheetData);
-  };
 
+    setMarksheetData(semData.data[0].subjects);
+    setGPA(semData.data[0].gpa);
+  };
+  // console.log("ssdd", GPA);
   return (
     <div>
       <Header studentData={studentData}></Header>
@@ -47,7 +49,8 @@ function Sem_Data() {
         <div className="welcome-section">
           <h1>Welcome to the Marksheets Page</h1>
           <p>
-            Select a subject from the dropdown below to view the marksheet data.
+            Select your semester from the dropdown below to view the marksheet
+            data.
           </p>
         </div>
 
@@ -87,7 +90,7 @@ function Sem_Data() {
                 <h3>Batch: {response.year}</h3>
               </div>
               <div className="stu_intro_2">
-                <h3>SGPA: 8.16</h3>
+                <h3>SGPA: {GPA}</h3>
               </div>
             </div>
 

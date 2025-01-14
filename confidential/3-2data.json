@@ -1,0 +1,179 @@
+[
+    {
+        "username": "19KH1A0512",
+        "subjects": [
+            {
+                "name": "Cryptography & Network Security",
+                "status": "P",
+                "credits": 3,
+                "grade": 6
+            },
+            {
+                "name": "Big Data Analytics",
+                "status": "P",
+                "credits": 3,
+                "grade": 8
+            },
+            {
+                "name": "English Communication",
+                "status": "P",
+                "credits": 3,
+                "grade": 6
+            },
+            {
+                "name": "Compiler Design",
+                "status": "P",
+                "credits": 3,
+                "grade": 8
+            },
+            {
+                "name": "Basics of VLSI",
+                "status": "P",
+                "credits": 3,
+                "grade": 6
+            },
+            {
+                "name": "Managerial Economics and Financial Analysis",
+                "status": "P",
+                "credits": 3,
+                "grade": 7
+            },
+            {
+                "name": "Big Data Analytics Laboratory",
+                "status": "P",
+                "credits": 1.5,
+                "grade": 10
+            },
+            {
+                "name": "English Communication lab",
+                "status": "P",
+                "credits": 1.5,
+                "grade": 10
+            },
+            {
+                "name": "Socially Relevant Project",
+                "status": "P",
+                "credits": 0.5,
+                "grade": 10
+            }
+        ]
+    },
+    {
+        "username": "19KH1A0516",
+        "subjects": [
+            {
+                "name": "Cryptography & Network Security",
+                "status": "P",
+                "credits": 3,
+                "grade": 8
+            },
+            {
+                "name": "Big Data Analytics",
+                "status": "P",
+                "credits": 3,
+                "grade": 6
+            },
+            {
+                "name": "English Communication",
+                "status": "P",
+                "credits": 3,
+                "grade": 9
+            },
+            {
+                "name": "Compiler Design",
+                "status": "P",
+                "credits": 3,
+                "grade": 6
+            },
+            {
+                "name": "Basics of VLSI",
+                "status": "P",
+                "credits": 3,
+                "grade": 6
+            },
+            {
+                "name": "Managerial Economics and Financial Analysis",
+                "status": "P",
+                "credits": 3,
+                "grade": 7
+            },
+            {
+                "name": "Big Data Analytics Laboratory",
+                "status": "P",
+                "credits": 1.5,
+                "grade": 10
+            },
+            {
+                "name": "English Communication lab",
+                "status": "P",
+                "credits": 1.5,
+                "grade": 9
+            },
+            {
+                "name": "Socially Relevant Project",
+                "status": "P",
+                "credits": 0.5,
+                "grade": 10
+            }
+        ]
+    },
+    {
+        "username": "19KH1A0544",
+        "subjects": [
+            {
+                "name": "Cryptography & Network Security",
+                "status": "P",
+                "credits": 3,
+                "grade": 8
+            },
+            {
+                "name": "Big Data Analytics",
+                "status": "P",
+                "credits": 3,
+                "grade": 7
+            },
+            {
+                "name": "English Communication",
+                "status": "P",
+                "credits": 3,
+                "grade": 8
+            },
+            {
+                "name": "Compiler Design",
+                "status": "P",
+                "credits": 3,
+                "grade": 7
+            },
+            {
+                "name": "Basics of VLSI",
+                "status": "P",
+                "credits": 3,
+                "grade": 6
+            },
+            {
+                "name": "Managerial Economics and Financial Analysis",
+                "status": "P",
+                "credits": 3,
+                "grade": 7
+            },
+            {
+                "name": "Big Data Analytics Laboratory",
+                "status": "P",
+                "credits": 1.5,
+                "grade": 10
+            },
+            {
+                "name": "English Communication lab",
+                "status": "P",
+                "credits": 1.5,
+                "grade": 10
+            },
+            {
+                "name": "Socially Relevant Project",
+                "status": "P",
+                "credits": 0.5,
+                "grade": 10
+            }
+        ]
+    }
+]
