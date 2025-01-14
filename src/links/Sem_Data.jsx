@@ -33,7 +33,7 @@ function Sem_Data() {
 
   const handleSubmit = async () => {
     const semData = await axios.get(
-      `http://localhost:3000/getsem1/${response.username}/${response.year}/${selectedSemester}/${response.branch}/${response.regulation}`
+      `https://backend-project-1nk6.onrender.com/getsem1/${response.username}/${response.year}/${selectedSemester}/${response.branch}/${response.regulation}`
     );
 
     setMarksheetData(semData.data[0].subjects);
