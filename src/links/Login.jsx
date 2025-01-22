@@ -43,7 +43,7 @@ function Login() {
     }
     else{
       try {
-        const response = await axios.post("https://backend-project-1nk6.onrender.com/login",formData)
+        const response = await axios.post("http://localhost:3000/login",formData)
         console.log(response)
         localStorage.setItem('response',JSON.stringify({username:response.data.students.username,year:response.data.students.year,regulation:response.data.students.regulation,branch:response.data.students.branch}))
         Navigate('/dashboard',{state:{username:response.data.students.username,year:response.data.students.year,regulation:response.data.students.regulation,branch:response.data.students.branch}})

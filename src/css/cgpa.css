@@ -1,0 +1,144 @@
+/* Desktop Styles (Default, Unchanged) */
+#borderimg1 {
+    border-image-source: url(ff.jpg);
+    border-image-slice: 10;
+    border-image-repeat: stretch;
+  }
+  
+  
+  .center {
+    font-family: URW Gothic;
+    color: red;
+    text-align: center;
+    font-size: 2.2em;
+    margin: 0;
+    padding: 0;
+  }
+  
+  p {
+    text-align: center;
+    font-style: bold;
+    /* font-size: 1.2em; */
+    margin: 0;
+    padding: 0;
+  }
+  
+  .report-card {
+    background-color: #ffc300;
+    padding: 2.5rem;
+  }
+  
+  table, th, td {
+    border: 1px solid black;
+    text-align: center;
+    /* font-size: 1.7rem; */
+    font-family: "Times New Roman";
+  }
+  
+  td {
+    border: 1px solid black;
+  }
+  td {
+    border: 1px solid black;
+    text-align: center;
+    /* font-size: 1.7rem; */
+}
+  .year {
+    font-size: 2.5rem;
+    font-family: "Times New Roman";
+  }
+  
+  .button {
+    background-color: #4caf50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .button2 {
+    background-color: #008cba; /* Blue */
+  }
+  
+  #button3 {
+    float: right;
+    display: inline-block;
+    background-color: #f44336; /* Red */
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  /* Mobile Responsive Styles */
+  @media only screen and (max-width: 768px) {
+    /* Mobile-specific adjustments */
+    #borderimg1 {
+      padding: 10px;
+    }
+  
+    .center {
+      font-size: 1.5em; /* Smaller font size for titles */
+    }
+  
+    p {
+      font-size: 1em; /* Smaller paragraph font size */
+    }
+  
+    .report-card {
+      padding: 1.5rem;
+    }
+  
+    table, th, td {
+      font-size: 1.2rem; /* Adjusted table font size */
+    }
+  
+    .year {
+      font-size: 2rem; /* Reduced year header font size */
+    }
+  
+    button {
+      width: 100%; /* Buttons take full width on mobile */
+      padding: 10px;
+      font-size: 14px;
+    }
+  
+    #button3 {
+      float: none; /* Center buttons on mobile */
+      margin-top: 10px;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    /* Additional tweaks for smaller phones */
+    .center {
+      font-size: 1.2em;
+    }
+  
+    p {
+      font-size: 0.9em;
+    }
+  
+    .report-card {
+      padding: 1rem;
+    }
+  
+    table, th, td {
+      font-size: 1rem;
+    }
+  
+    .year {
+      font-size: 1.5rem;
+    }
+  
+    button {
+      font-size: 12px;
+      padding: 8px;
+    }
+  }
+  

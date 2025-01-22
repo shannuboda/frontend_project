@@ -21,7 +21,7 @@ function Dashboard() {
           console.warn('Response is not properly initialized. Skipping fetch.');
           return;
         }
-        const get_res = await axios.get(`https://backend-project-1nk6.onrender.com/getData/${response.username}/${response.year}`);
+        const get_res = await axios.get(`http://localhost:3000/getData/${response.username}/${response.year}`);
         setStudentData(get_res.data); // Directly use `get_res.data`
         console.log(get_res.data);
       } catch (error) {

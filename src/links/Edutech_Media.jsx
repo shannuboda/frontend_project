@@ -20,7 +20,7 @@ function Edutech_Media({studentData}) {
             </div>
           </div>
           <div className="row mt-5 mt-md-4 row-cols-1 row-cols-sm-1 row-cols-md-3 justify-content-center">
-            <div className="col">
+            <div className="col" onClick={()=>{navigate('/cgpa',{state:studentData})}}>
               <div className="service-card">
                 <div className="icon-wrapper">
                   <i className="fa-solid fa-user-graduate"></i>
@@ -34,7 +34,7 @@ function Edutech_Media({studentData}) {
                 <div className="icon-wrapper">
                   <i className="fa-solid fa-arrows-down-to-people"></i>
                 </div>
-                <h3>Semester wise Result</h3>
+                <h3>Semester Wise Result</h3>
                 <p>
                   Get Your All semesters Results along with SGPA of individual
                   Semesters
@@ -42,7 +42,7 @@ function Edutech_Media({studentData}) {
               </div>
             </div>
             <div className="col">
-              <div className="service-card">
+              <div className="service-card" onClick={()=>{navigate('/supply',{state:studentData})}}>
                 <div className="icon-wrapper">
                   <i className="fa-solid fa-pen-clip"></i>
                 </div>
