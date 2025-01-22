@@ -27,7 +27,7 @@ function CGPA() {
   const gpaCalci = async () => {
     try {
       const GPAResults = await axios.get(
-        `http://localhost:3000/getcgpa/${response.username}/${response.year}/${response.branch}/${response.regulation}`
+        `https://backend-project-1nk6.onrender.com/getcgpa/${response.username}/${response.year}/${response.branch}/${response.regulation}`
       );
       console.log(GPAResults.data);
       setCreditRecord(GPAResults.data.records_credits || []);

@@ -34,7 +34,7 @@ function Supply_Data() {
 
   const handleSubmit = async () => {
     const semData = await axios.get(
-      `http://localhost:3000/getsupply/${response.username}/${response.year}/${selectedSemester}/${response.branch}/${response.regulation}`
+      `https://backend-project-1nk6.onrender.com/getsupply/${response.username}/${response.year}/${selectedSemester}/${response.branch}/${response.regulation}`
     );
    
     if(semData.data.message==="No Data Found")
