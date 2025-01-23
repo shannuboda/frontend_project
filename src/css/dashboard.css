@@ -255,14 +255,23 @@
 /* supply css in print media*/
 
 @media print {
+  /* Ensure the table header is always visible */
+  .marksheet-table thead {
+    display: table-header-group; /* This keeps the header visible */
+  }
+
   /* Hide all rows by default */
-  .marksheet-table tr {
+  .marksheet-table tbody tr {
     display: none;
   }
 
-  /* Show only selected rows */
-  .marksheet-table tr[data-checked="true"] {
+  /* Show only rows that are selected (checked) */
+  .marksheet-table tbody tr[data-checked="true"] {
     display: table-row;
   }
-}
 
+  /* Explicitly hide rows with the 'hidden-row' class */
+  .hidden-row {
+    display: none !important;
+  }
+}
