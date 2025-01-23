@@ -250,3 +250,19 @@
     padding: 0;
   }
 }
+
+
+/* supply css in print media*/
+
+@media print {
+  /* Hide all rows by default */
+  .marksheet-table tr {
+    display: none;
+  }
+
+  /* Show only selected rows */
+  .marksheet-table tr[data-checked="true"] {
+    display: table-row;
+  }
+}
+
