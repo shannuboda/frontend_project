@@ -146,19 +146,7 @@ function CGPA() {
       >
         Print Data
       </button>
-      <button
-        className="button button2"
-        onClick={() => (window.location.href = "../homepage.php")}
-      >
-        Go to HomePage Here
-      </button>
-      <button
-        className="btn btn-danger"
-        onClick={() => (window.location.href = "../logout.php")}
-        id="button3"
-      >
-        LOGOUT Here
-      </button>
+    
     </div>
 
 </>

@@ -15,7 +15,7 @@ export default function Quick_followups() {
     },
     {
       id: 2,
-      hyperlink: "https://svportal.iblogger.org",
+      hyperlink: "https://www.forum.universityupdates.in/threads/jntua-b-tech-study-materials-notes-lab-manuals.34716/",
       icon: <FaBookReader />,
       title: "E Learning",
       description: "Explore Engineering Materials.",

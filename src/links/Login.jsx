@@ -43,6 +43,7 @@ function Login() {
     }
     else{
       try {
+        toast.success("Please wait your Data is Processing");
         const response = await axios.post("https://backend-project-1nk6.onrender.com/login",formData)
         console.log(response)
         localStorage.setItem('response',JSON.stringify({username:response.data.students.username,year:response.data.students.year,regulation:response.data.students.regulation,branch:response.data.students.branch}))
