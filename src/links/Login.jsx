@@ -20,6 +20,7 @@ import { useNavigate } from 'react-router-dom';
   
 function Login() {
   const [formData, setFormData] = useState({"username":"","password":""})
+  const [loader,setLoader] = useState(false)
   const Navigate = useNavigate()
 
  useEffect(() => {
@@ -44,9 +45,11 @@ function Login() {
     else{
       try {
         toast.success("Please wait your Data is Processing");
+        setLoader(true)
         const response = await axios.post("https://backend-project-1nk6.onrender.com/login",formData)
         console.log(response)
         localStorage.setItem('response',JSON.stringify({username:response.data.students.username,year:response.data.students.year,regulation:response.data.students.regulation,branch:response.data.students.branch}))
+       setLoader(false)
         Navigate('/dashboard',{state:{username:response.data.students.username,year:response.data.students.year,regulation:response.data.students.regulation,branch:response.data.students.branch}})
     } catch (error) {
       if (error.response) {
@@ -66,8 +69,10 @@ function Login() {
     
   }
   return (
+    
     <div>
-    <Toaster
+      {/* {loader && (<div className="loader"></div>)} */}
+      <Toaster
   position="top-right"
   reverseOrder={true}
   gutter={8}
@@ -79,8 +84,8 @@ function Login() {
     duration: 5000,
     removeDelay: 1000,
     style: {
-      background: '#363636',
-      color: '#fff',
+      background: '#ffff',
+      color: 'black',
     },
 
     // Default options for specific types
@@ -88,12 +93,13 @@ function Login() {
       duration: 3000,
       iconTheme: {
         primary: 'green',
-        secondary: 'black',
+        secondary: 'white',
       },
     },
   }}
 />
-       <MDBContainer className="my-5 login-page">
+  
+          <MDBContainer className="my-5 login-page">
 
 <MDBCard>
   <MDBRow className='g-0'>

@@ -35,8 +35,9 @@ function Supply_Data() {
     const semData = await axios.get(
       `https://backend-project-1nk6.onrender.com/getsupply/${response.username}/${response.year}/${selectedSemester}/${response.branch}/${response.regulation}`
     );
-
-    if (semData.data.message === "No Data Found") {
+    // console.log(semData.data.length);
+    
+    if (!semData.data.length) {
       toast.error("No Data Found, Please Contact Your Administrator");
     }
     setMarksheetData(semData.data);
@@ -96,10 +97,9 @@ function Supply_Data() {
       <div className="marksheet-container">
         {/* Welcome Section */}
         <div className="welcome-section">
-          <h1>Welcome to the Marksheets Page</h1>
+          <h1>Welcome to the Supplimentary Applications Page</h1>
           <p>
-            Select your semester from the dropdown below to view the marksheet
-            data.
+            Select your Semester from the dropdown below to Apply for your Supplymentary Subjects.
           </p>
         </div>
 

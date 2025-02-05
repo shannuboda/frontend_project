@@ -11,8 +11,8 @@ function Footer() {
                        
                         <h2 className='Founder_Info'>Founder Info</h2>
                         <div className="hr"></div>
-                        {/* <h4>Designed and Developed By: B.S.Subramani</h4> */}
-                        {/* <h6>+91 7989705954<span>|</span>bssmani16@gmail.com</h6> */}
+                        <h4>Designed and Developed By: B.S.Subramani</h4>
+                        <h6>+91 7989705954<span>|</span>bssmani16@gmail.com</h6>
                        
                     </div>
                 </div>

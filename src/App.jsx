@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 import Sem_Data from "./links/Sem_Data";
 import CGPA from "./links/CGPA";
 import Supply_Data from "./links/Supply_Data";
+import "primereact/resources/themes/lara-light-cyan/theme.css";
 
 function App() {
  

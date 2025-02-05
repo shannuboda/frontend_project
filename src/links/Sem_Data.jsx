@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import Header from "./Header";
 import { useLocation, useNavigate } from "react-router-dom";
 import axios from "axios";
+import toast, { Toaster } from "react-hot-toast";
 
 function Sem_Data() {
   const [selectedSemester, setselectedSemester] = useState("");
@@ -27,7 +28,7 @@ function Sem_Data() {
 
   //   semesters data fetching api
   const handleSemesterChange = (event) => {
-    console.log(event.target.value);
+    // console.log(event.target.value);
     setselectedSemester(event.target.value);
   };
 
@@ -35,13 +36,41 @@ function Sem_Data() {
     const semData = await axios.get(
       `https://backend-project-1nk6.onrender.com/getsem1/${response.username}/${response.year}/${selectedSemester}/${response.branch}/${response.regulation}`
     );
-
+    if (!semData.data.length) {
+      toast.error("No Data Found, Please Contact Your Administrator");
+    }
     setMarksheetData(semData.data[0].subjects);
     setGPA(semData.data[0].gpa);
   };
   // console.log("ssdd", GPA);
   return (
     <div>
+       <Toaster
+        position="top-right"
+        reverseOrder={true}
+        gutter={8}
+        containerClassName=""
+        containerStyle={{}}
+        toastOptions={{
+          // Define default options
+          className: "",
+          duration: 5000,
+          removeDelay: 1000,
+          style: {
+            background: "black",
+            color: "white",
+          },
+
+          // Default options for specific types
+          success: {
+            duration: 3000,
+            iconTheme: {
+              primary: "green",
+              secondary: "white",
+            },
+          },
+        }}
+      />
       <Header studentData={studentData}></Header>
 
       <div className="marksheet-container">

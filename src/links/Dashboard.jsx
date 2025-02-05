@@ -7,11 +7,14 @@ import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
 import toast, { Toaster } from 'react-hot-toast';
+import { Skeleton } from 'primereact/skeleton';
+
 
 function Dashboard() {
     const [response, setResponse] = useState(null); // Initialize with null
     const [studentData, setStudentData] = useState(null); // Initialize with null
     const navigate = useNavigate();
+    const [loader,setLoader] = useState(false)
   
     // Fetch student data from the server
     const getStudentData = async () => {
@@ -21,9 +24,11 @@ function Dashboard() {
           console.warn('Response is not properly initialized. Skipping fetch.');
           return;
         }
+        setLoader(true)
         const get_res = await axios.get(`https://backend-project-1nk6.onrender.com/getData/${response.username}/${response.year}`);
         setStudentData(get_res.data); // Directly use `get_res.data`
         console.log(get_res.data);
+        setLoader(false)
       } catch (error) {
         console.error('Error fetching student data:', error);
       }
@@ -50,7 +55,26 @@ function Dashboard() {
     }, [response]);
     
   return (
-    <div>
+    <>
+    {
+      loader ? 
+      <div className="border-round border-1 surface-border p-4 surface-card">
+    <div className="flex mb-3">
+        <Skeleton shape="circle" size="4rem" className="mr-2"></Skeleton>
+        <div>
+            <Skeleton width="10rem" className="mb-2"></Skeleton>
+            <Skeleton width="5rem" className="mb-2"></Skeleton>
+            <Skeleton height=".5rem"></Skeleton>
+        </div>
+    </div>
+    <Skeleton width="100%" height="150px"></Skeleton>
+    <div className="flex justify-content-between mt-3">
+        <Skeleton width="4rem" height="2rem"></Skeleton>
+        <Skeleton width="4rem" height="2rem"></Skeleton>
+    </div>
+</div>
+         
+      :(<div>
          <Toaster
   position="top-right"
   reverseOrder={true}
@@ -82,7 +106,12 @@ function Dashboard() {
       <Quick_followups></Quick_followups>
       <Edutech_Media studentData={studentData}></Edutech_Media>
       <Footer></Footer>
-    </div>
+    </div>)
+    }
+    
+    
+    </>
+   
   )
 }
 
